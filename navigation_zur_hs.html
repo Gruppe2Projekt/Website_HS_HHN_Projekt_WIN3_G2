@@ -1,10 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Navigation</title>
 
-</body>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Einbindung eigener css Datei -->
+    <link href="css/mycss.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=AIzaSyBcN7YdcpJ235XZw1-RZ9KW_NGVq174Rgo" type="text/javascript"></script>
+      <script type="text/javascript">
+
+    //<![CDATA[
+
+    function load() {
+  if (GBrowserIsCompatible()) {
+    var map = new GMap2(document.getElementById("map"));
+    var punkt = new GLatLng(49.122441, 9.211101);
+    map.setCenter(punkt, 15);
+
+    var marke = new GMarker(punkt);
+    map.addOverlay(marke);
+  }
+}
+    //]]>
+    </script>
+  </head>
+
+  <body onload="load()" onunload="GUnload()">
+    <div id="map" style="width: 500px; height: 300px"></div>
+
+        <footer class="row">
+            <div class="col col-md-2 col-md-offset-10">
+                &copy 2016 Gruppe 2
+            </div>
+        </footer>
+
+    </div><!--ende Container-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+
 </html>
