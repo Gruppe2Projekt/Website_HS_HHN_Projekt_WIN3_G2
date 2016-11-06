@@ -25,18 +25,8 @@
     <div class="row">
         <div class="col col-md-12">
             <header class="clearfix">
-                <!-- <section class="navbar navbar-inverse">
-                     <ul class="nav navbar-nav">
-                         <li><a href="index.html">Home</a> </li>
-                         <li><a href="navigation_zur_hs.html">Navigation zur HS Heilbronn</a> </li>
-                         <li><a href="ueber_uns.html">Über uns</a> </li>
-                         <li><a href="impressum.html">Impressum</a> </li>
-                     </ul>
-                 </section> -->
-
-                <!--  Beginn neue Navi -->
                 <section id="branding">
-                    <a href="index.html"><h1>Startseite Gruppe 2</h1></a>
+                    <a href="index.html"><h1>Roadmap Gruppe 2</h1></a>
                 </section>
                 <div class="container">
                     <nav class="navbar navbar-default" role="navigation">
@@ -52,7 +42,7 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li><a href="navigation_zur_hs.html"><span class="glyphicon glyphicon-map-marker"></span> Dein
+                                <li><a href="weg_zur_hs.html"><span class="glyphicon glyphicon-map-marker"></span> Dein
                                     Weg zur Hochschule</a></li>
                                 <li><a href="https://www.hs-heilbronn.de"><span class="glyphicon glyphicon-education"></span> Hochschulwebsite</a>
                                 </li>
@@ -73,49 +63,42 @@
     </div> <!--ende row-->
     <div class="row">
         <aside class="col col-md-3">
-            <h2>Nebenspalte</h2>
+            <h2>Gruppe 2:</h2>
             <p>
-                Bootstrap ist ein freies CSS-Framework. Es enthält auf HTML
-                und CSS basierende Gestaltungsvorlagen für Typografie, Formulare, Buttons, Tabellen, Grid-Systeme,
-                Navigations- und andere Oberflächengestaltungselemente sowie zusätzliche, optionale
-                JavaScript-Erweiterungen.
-                Es wird unter anderem von der NASA und dem US-amerikanischen Nachrichtensender MSNBC eingesetzt.
+                Routenplanung zum Standort Heilbronn: Eingabe eines Startpunktes der Route im Aktionsbereich
+                und Darstellung der Route zum Standort Heilbronn in Google Maps.
+                Kartenansicht „Roadmap“
             </p>
         </aside>
         <article class="col col-md-9">
-            <h2>Hauptteil</h2>
+            <h2>Aufgabe 1:</h2>
             <p>
-                Um Bootstrap in einer HTML-Seite zu verwenden, muss zunächst eine CSS-Datei aus den heruntergeladenen
-                LESS-Stylesheets kompiliert werden. Dies kann mit einem LESS-Compiler geschehen oder über die
-                „Customize“-Funktion
-                in der beiliegenden Bootstrap-Dokumentation.[13] Alternativ kann auch eine vorab kompilierte CSS-Datei
-                heruntergeladen
-                werden. Anschließend muss die Frame enthaltende CSS-Datei in das HTML-Dokument eingebunden werden.
-                Falls auch JavaScript-Komponenten gewählt wurden, müssen diese zusammen mit der jQuery-Bibliothek
-                ebenfalls
-                im HTML-Dokument referenziert werden. Das folgende Beispiel verdeutlicht die Funktionsweise.
-                Der HTML-Quellcode definiert ein einfaches Suchformular sowie eine Ergebnisliste in Form einer Tabelle.
-                Die Seite besteht aus regulären, semantisch verwendeten HTML5-Elementen sowie einigen zusätzlichen
-                CSS-Klassenangaben
-                entsprechend der Bootstrap-Dokumentation.
+                Allgemein
+                Die Benutzeroberfläche ist mittels Responsive Design für mobile Endgeräte, Tablets und PC zu
+                optimieren. Die Verwendung eines Frameworks zur Umsetzung (Bootstrap, Foundation o.ä.) wird
+                empfohlen. Für die Umsetzung wird die Integration von Google Maps benötigt:
+                https://developers.google.com/maps/visualize?hl=de
+                Teilweise können Lösungen die Verwendung eines API Keys (Google Developer Programm) verlangen.
+                Ist dies der Fall, ist der Weg zur Erzeugung eines API Keys im Google Developer Portal
+                beschrieben. Zur Erzeugung eines API Keys benötigen Sie einen Google Account. Diesen können
+                Sie kostenlos bei Google Erzeugen.
             </p>
             <div class="row">
                 <div class="col col-md-6">
-                    <h3>Hier ist eine Unterspalte 1 vom Hauptteil.</h3>
-                    <p>Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                        bla bla bla
-                        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                        bla bla bla.
+                    <h3>Abgabe Termin:</h3>
+                    <p>
+                        08.11.2016, 13:15 Uhr (URL, ZIP Archiv per Mail m.ross@digital-worx.de)
+                        Quellcode mit Kommentar zur Gruppennummer und Gruppenmitglieder
+                        Präsentation der Lösung durch Gruppe in Vorlesung
                     </p>
                 </div>
                 <div class="col col-md-6">
-                    <h3>Hier ist eine Unterspalte 2 vom Hauptteil.</h3>
-                    <p>Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                        bla bla bla
-                        bla bla bla bla bla bla bla bla Uhr bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                        bla bla bla.
+                    <h3>Breakpoints</h3>
+                    <p>
+                        Die Ausgabe des Userinterfaces soll für folgende Breakpoints optimiert werden*:<br>
+                        320 Pixel (iPhone Hochformat)<br> 480 Pixel (iPhone Querformat)<br> 649 Pixel (Kleines Tablet
+                        Querformat)<br> 768 Pixel (iPad Hochformat)<br> 1024 Pixel (iPad Querformat)<br> 1200 Pixel(Laptop)<br>
+                        *= Unter Optimierung wird die maximale Ausnutzung des Bildschirmes erwartet.
                     </p>
                 </div>
             </div>
