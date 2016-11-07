@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Routenplanung</title>
-
+    <link rel="shortcut icon" type="image/x-icon" href="HHN ICON.png">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
@@ -23,17 +23,23 @@
     <script src="app.js"></script>
 </head>
 <body onload="initialize()">
+
+
 <div class="container">
     <div class="row">
         <div class="col col-md-12">
             <header class="clearfix">
 
                 <!--  Beginn neue Navi -->
-                <section id="branding">
-                    <a href="index.html"><h1>Startseite Gruppe 2</h1></a>
-                </section>
-                <div class="container">
-                    <nav class="navbar navbar-default" role="navigation">
+                <div class="row">
+                    <div class="col col-md-4">
+                        <img src="HHN_ab_40_mm_4c_pos.jpg" class="img-responsive" alt="LogoHHN" style="margin-top:1em "   >
+                    </div>
+
+                </div>
+
+                <div class="container" style="padding-left:0em; ">
+                    <nav class="navbar navbar-default" role="navigation" >
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -44,13 +50,23 @@
                             <a class="navbar-brand" class="active" href="index.html">Home</a>
                         </div>
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="navigation.html"><span class="glyphicon glyphicon-map-marker"></span> Dein
-                                    Weg zur Hochschule</a></li>
-                                <li><a href="https://www.hs-heilbronn.de"><span class="glyphicon glyphicon-education"></span> Hochschulwebsite</a>
+                                <li class="active" >
+                                    <a href="navigation.html">
+                                        <span class="glyphicon glyphicon-map-marker"></span>
+                                        Dein Weg zur Hochschule</a>
                                 </li>
-                                <li><a href="impressum.html"><span class="glyphicon glyphicon-info-sign"></span> Impressum</a></li>
+                                <li  >
+                                    <a href="https://www.hs-heilbronn.de" target="_blank">
+                                        <span class="glyphicon glyphicon-education"></span>
+                                        Hochschulwebsite</a>
+                                </li>
+                                <li>
+                                    <a href="impressum.html">
+                                        <span class="glyphicon glyphicon-info-sign"></span>
+                                        Impressum</a>
+                                </li>
 
                             </ul>
                         </div>
@@ -63,7 +79,7 @@
         </div>
     </div> <!--ende row-->
     <div class="row" style="height: 300px;"> <!-- Anfang Roadmap -->
-        <div id="map-canvas" class="col-md-11"style="height: 300px;"></div>
+        <div id="map-canvas" class="col-md-11" style="height: 300px;"></div>
     </div> <!--Ende Roadmap -->
     <div class="row" style="height: 50px;"> <!-- Abstandshalter -->
     </div>
@@ -73,10 +89,11 @@
             <div class="form-group">
                 <label for="inputAddressStart" class="col-md-1">Routenstart</label>
                 <div class="col-md-5">
-                    <input type="text" class="form-control" id="inputAddressStart" placeholder="Startpunkt(z.B.Stuttgart)">
+                    <input type="text" class="form-control" id="inputAddressStart"
+                           placeholder="Startpunkt(z.B.Stuttgart)">
                 </div>
-                </div>
-            <div class="col-md-6"> Ziel: Hochschule Heilbronn, Y-Bau </div>
+            </div>
+            <div class="col-md-6"> Ziel: Hochschule Heilbronn, Y-Bau</div>
             <div class="form-group">
                 <label for="inputTravelMode" class="col-md-1">Verkehrsmittel</label>
                 <div class="col-md-11">
@@ -84,7 +101,6 @@
                         <option value="DRIVING">Auto</option>
                         <option value="WALKING">Zu Fuß</option>
                         <option value="BICYCLING">Fahrrad</option>
-                        <option value="TRANSIT">Öffentliche Verkehrsmittel</option>
                     </select>
                 </div>
             </div>
@@ -110,7 +126,6 @@
             </div>
         </form>
     </div> <!-- Ende Aktionsbereich -->
-
 
 
     <footer class="row">
