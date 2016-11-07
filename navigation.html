@@ -33,13 +33,13 @@
                 <!--  Beginn neue Navi -->
                 <div class="row">
                     <div class="col col-md-4">
-                        <img src="HHN_ab_40_mm_4c_pos.jpg" class="img-responsive" alt="LogoHHN" style="margin-top:1em "   >
+                        <img src="HHN_ab_40_mm_4c_pos.jpg" class="img-responsive" alt="LogoHHN" style="margin-top:1em ">
                     </div>
 
                 </div>
 
                 <div class="container" style="padding-left:0em; ">
-                    <nav class="navbar navbar-default" role="navigation" >
+                    <nav class="navbar navbar-default" role="navigation">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -50,14 +50,14 @@
                             <a class="navbar-brand" class="active" href="index.html">Home</a>
                         </div>
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li class="active" >
+                                <li class="active">
                                     <a href="navigation.html">
                                         <span class="glyphicon glyphicon-map-marker"></span>
                                         Dein Weg zur Hochschule</a>
                                 </li>
-                                <li  >
+                                <li>
                                     <a href="https://www.hs-heilbronn.de" target="_blank">
                                         <span class="glyphicon glyphicon-education"></span>
                                         Hochschulwebsite</a>
@@ -79,49 +79,63 @@
         </div>
     </div> <!--ende row-->
     <div class="row" style="height: 300px;"> <!-- Anfang Roadmap -->
-        <div id="map-canvas" class="col-md-11" style="height: 300px;"></div>
+        <div id="map-canvas" class="col-md-12" style="height: 300px; "></div>
     </div> <!--Ende Roadmap -->
     <div class="row" style="height: 50px;"> <!-- Abstandshalter -->
     </div>
 
     <div class="row"> <!-- Anfang Aktionsbereich -->
         <form class="form-vertical" role="form">
-            <div class="form-group">
-                <label for="inputAddressStart" class="col-md-1">Routenstart</label>
-                <div class="col-md-5">
-                    <input type="text" class="form-control" id="inputAddressStart"
-                           placeholder="Startpunkt(z.B.Stuttgart)">
-                </div>
-            </div>
-            <div class="col-md-6"> Ziel: Hochschule Heilbronn, Y-Bau</div>
-            <div class="form-group">
-                <label for="inputTravelMode" class="col-md-1">Verkehrsmittel</label>
-                <div class="col-md-11">
-                    <select class="form-control" id="inputTravelMode">
-                        <option value="DRIVING">Auto</option>
-                        <option value="WALKING">Zu Fuß</option>
-                        <option value="BICYCLING">Fahrrad</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-md-12">
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" id="inputAvoidHighways"> Autobahnen vermeiden
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" id="inputAvoidTolls" checked> Mautstraßen vermeiden
-                        </label>
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <label for="inputAddressStart" class="col-md-1">Routenstart</label>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" id="inputAddressStart"
+                               placeholder="Startpunkt(z.B.Stuttgart)">
                     </div>
                 </div>
+
+
             </div>
-            <div class="form-group">
+
+            <div class="col-lg-12">
                 <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary" onclick="calcRoute(); return false;">Route berechnen
-                    </button>
+                    <br>
+                    <p>
+                        Ziel: Hochschule Heilbronn, Y-Bau
+
+                    </p>
+                    <br>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <label for="inputTravelMode" class="col-md-1">Verkehrsmittel</label>
+                    <div class="col-md-5">
+                        <select class="form-control" id="inputTravelMode">
+                            <option value="DRIVING">Auto</option>
+                            <option value="WALKING">Zu Fuß</option>
+                            <option value="BICYCLING">Fahrrad</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="inputAvoidHighways"> Autobahnen vermeiden
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary" onclick="calcRoute(); return false;">Route
+                            berechnen
+                        </button>
+                    </div>
                 </div>
             </div>
         </form>
