@@ -45,14 +45,14 @@ function calcRoute() {
 	//var inputDestination = document.getElementById( 'inputAddressDestination' ).value;
 	var inputTravelMode = document.getElementById( 'inputTravelMode' ).value;
 	var avoidHighways = document.getElementById( 'inputAvoidHighways' ).checked;
-	var avoidTolls = document.getElementById( 'inputAvoidTolls' ).checked;
+
 
 	var request = {
 		origin: inputStart,
 		destination: "49.122604, 9.206499",
 		travelMode: google.maps.TravelMode[inputTravelMode],
 		avoidHighways: avoidHighways,
-		avoidTolls: avoidTolls,
+
 		provideRouteAlternatives: true
 	};
 
