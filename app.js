@@ -10,8 +10,9 @@ function initialize() {
 		zoom: 10,
 		center: new google.maps.LatLng( 49.168350, 9.188392 ), // Heilbronn
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
-		streetViewControl: false
+		streetViewControl: false,
 	};
+
 
 	var map = new google.maps.Map( document.getElementById( 'map-canvas' ), mapOptions );
 
