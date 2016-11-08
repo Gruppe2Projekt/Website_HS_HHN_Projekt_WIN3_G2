@@ -35,17 +35,16 @@
                     <div class="col col-md-4">
                         <img src="HHN_ab_40_mm_4c_pos.jpg" class="img-responsive" alt="LogoHHN" style="margin-top:1em ">
                     </div>
-
                 </div>
-
                 <div class="container" style="padding-left:0em; ">
                     <nav class="navbar navbar-default" role="navigation">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse"
                                     data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
-                                    class="icon-bar"></span><span class="icon-bar"></span>
+                                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
                             </button>
                             <a class="navbar-brand" class="active" href="index.html">Home</a>
                         </div>
@@ -77,19 +76,26 @@
 
             </header>
         </div>
-    </div> <!--ende row-->
-    <div class="row" style="height: 450px;"> <!-- Anfang Roadmap -->
-        <div id="map-canvas" class="col-md-12" style="height: 450px;margin-right: 1em "></div>
+        </div> <!--ende row-->
+
+    <div class="row" style="height: 400px;"> <!-- Anfang Roadmap -->
+
+        <div class="col-lg-12">
+
+            <a href="#" class="btn btn-primary" style="margin-bottom: 1em"><span class="glyphicon glyphicon-search"></span> Zieleingabe</a>
+
+        </div>
+        <div id="map-canvas" class="col-md-12" style="height: 400px;margin-right: 2em "></div>
     </div> <!--Ende Roadmap -->
     <div class="row" style="height: 50px;"> <!-- Abstandshalter -->
     </div>
 
-    <div class="row"> <!-- Anfang Aktionsbereich -->
+    <div class="row" id="Aktionsbereich" style="margin-top: 1em; "> <!-- Anfang Aktionsbereich -->
         <form class="form-vertical" role="form">
             <div class="col-lg-12">
-                <div class="form-group">
+                <div class="form-group" >
                     <label for="inputAddressStart" class="col-md-1">Routenstart</label>
-                    <div class="col-md-5">
+                    <div class="col-md-5" >
                         <input type="text" class="form-control" id="inputAddressStart"
                                placeholder="Startpunkt(z.B.Stuttgart)">
                     </div>
